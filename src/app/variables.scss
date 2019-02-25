@@ -1,0 +1,33 @@
+/*** 主题色 ***/
+$themeColor: rgb(1, 141, 151); // 主题色
+$fadedThemeColor: fade-out($color: $themeColor, $amount: .3); // 淡出主题色
+/*** 基础颜色 ***/
+$colorAppBg: desaturate(darken($themeColor, 15%), 70%); // 页面背景色
+$colorBorder: $themeColor; // 边框颜色
+$colorPanelBg: desaturate(darken($themeColor, 15%), 50%); // 输出结果渐变色 - 外围
+$colorBtnNormal: $themeColor;
+$colorBtnHover: lighten($themeColor, 5%); // 按钮悬停高亮色
+$colorBtnPressed: darken($themeColor, 5%); // 按钮按下颜色
+$colorDisplayTop: darken($themeColor, 15%); // 输出结果渐变色 - 顶
+$colorDisplayBottom: desaturate(lighten($themeColor, 25%), 50%); // 输出结果渐变色 - 底
+$colorErrorBg: #811616;
+/*** 阴影颜色 ***/
+$shadowColorNormal: $fadedThemeColor; // 普通阴影色
+$shadowColorHighlight: $themeColor; // 高亮阴影色
+$shadowColorError: lighten($colorErrorBg, 30%); // 错误框阴影色
+$shadowColorPanel: darken(fade-out($shadowColorHighlight, 0.3), 25%); // 面板阴影色
+/*** 字体颜色 ***/
+$fontColorDark: darken($themeColor, 5%); // 深色文字颜色
+$fontColorLight: desaturate(lighten($themeColor, 60%), 50%); // 浅色文字颜色
+$fontColorError: lighten($colorErrorBg, 40%);
+/*** 尺寸 ***/
+$containerWidth: 300px; // 容器宽度
+$lineHeight: 24px; // 输入框、按钮和错误信息的行高
+$paddingInput: 5px; // 输入框和按钮的内边距
+$resultHeight: 100px; // 结果框高度
+/*** 字体大小 ***/
+$fontSizeBase: 16px; // 基础字体大小
+$fontSizeInput: 1rem; // 输入框字体大小
+$fontSizeButton: 1.2rem; // 按钮字体大小
+$fontSizeDisplay: 2.5rem; // 结果框字体大小
+$fontSizeError: 0.8rem; // 错误框字体大小

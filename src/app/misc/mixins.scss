@@ -1,0 +1,52 @@
+@import "../variables.scss";
+
+@mixin theme-wrapper {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+@mixin theme-panel {
+  width: $containerWidth;
+  background: $colorPanelBg;
+  box-shadow: 0px 0px 20px $shadowColorPanel;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+@mixin theme-input {
+  line-height: $lineHeight;
+  font-size: $fontSizeInput;
+  padding: $paddingInput;
+  box-shadow: inset 0px 0px 5px $shadowColorNormal;
+  border: solid 1px $colorBorder;
+  color: $fontColorDark;
+  text-align: center;
+}
+
+@mixin theme-button {
+  line-height: $lineHeight;
+  font-size: $fontSizeButton;
+  padding: $paddingInput;
+  background: $colorBtnNormal;
+  color: $fontColorLight;
+  border: solid 1px $colorBorder;
+  cursor: pointer;
+}
+
+@mixin theme-display {
+  background: radial-gradient(ellipse at top, $colorDisplayTop, transparent),
+    radial-gradient(ellipse at bottom, $colorDisplayBottom, transparent);
+  height: $resultHeight;
+  color: $fontColorLight;
+  font-size: $fontSizeDisplay;
+}
+
+@mixin theme-error {
+  height: $lineHeight;
+  line-height: $lineHeight;
+  font-size: $fontSizeError;
+  color: $fontColorError;
+  background: $colorErrorBg;
+  box-shadow: inset 0px 0px 5px $shadowColorError;
+}

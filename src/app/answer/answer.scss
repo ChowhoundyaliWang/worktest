@@ -1,0 +1,59 @@
+@import "../variables.scss";
+@import "../misc/mixins.scss";
+
+#work {
+  @include theme-wrapper;
+  /*** 
+  === 在下面加入你的代码 ===
+  使 #panel 在页面中水平和垂直居中
+  ***/
+}
+
+#panel {
+  @include theme-panel;
+  /*** 
+  === 在下面加入你的代码 ===
+  使 #panel 中的元素垂直排列，并占满 #panel 的宽度
+  ***/
+}
+
+// 阿拉伯数字输入框样式
+#digits {
+  @include theme-input;
+}
+
+// 转换按钮样式
+#submit {
+  @include theme-button;
+  /*** 
+  === 在下面加入你的代码 ===
+  使 #submit ：
+  - 在鼠标悬停时，替换为背景色 $colorBtnHover
+  - 在鼠标按下时，替换为背景色 $colorBtnPressed
+  - 不跟踪焦点状态，即鼠标一旦离开按钮，按钮就恢复原有的背景色（$colorBtnNormal）
+  - 为背景色变化添加 0.5秒，淡出（Easing-out）的渐变动画（注意：动画应仅针对背景色）
+  ***/
+}
+
+// 罗马数字显示结果样式
+#result {
+  @include theme-display;
+  /*** 
+  === 在下面加入你的代码 ===
+  使 #result 中的文字水平和垂直居中
+  ***/
+}
+
+// 错误信息样式
+#error {
+  @include theme-error;
+  /*** 
+  === 在下面加入你的代码 ===
+  使 #error :
+  - 其中的文本在水平和垂直方向上都居中
+  - 宽度占满整个 #panel 元素
+  - 垂直方向上位于 #result 元素的中央
+  
+  提示：为了完成布局，你可能需要修改上面的其他样式，并充分利用CSS函数和SCSS变量
+  ***/
+}
